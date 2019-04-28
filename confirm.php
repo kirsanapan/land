@@ -81,7 +81,7 @@ include("menu.php");?>
       <h3 align="center" style="color:green">
       <span class="glyphicon glyphicon-shopping-cart"> </span>
          confirm cart </h3>
-      <form  name="formlogin" action="saveorder.php" method="POST" id="login" class="form-horizontal">
+      <form  name="formlogin" action="print.php" method="POST" id="login" class="form-horizontal">
         <div class="form-group">
           <div class="col-sm-12">
             <input type="text"  name="name" class="form-control" id="c_name" value="<?php echo $objResult["Name"] ?>" required placeholder="ชื่อ-สกุล" />
@@ -102,7 +102,7 @@ include("menu.php");?>
           <div class="col-sm-12">
             <input type="email"  name="email" class="form-control" id="c_email" value="<?php echo $objResult["email"] ?>" required placeholder="อีเมล์" />
           </div>
-        
+          <button type="submit" class="btn btn-success">ปลิ้นใบเสร็จ</a>
         </div>
       </form>
     </div>
